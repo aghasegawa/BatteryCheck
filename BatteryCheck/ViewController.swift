@@ -20,14 +20,12 @@ class ViewController: UIViewController {
         let myBatteryLevel = myDevice.batteryLevel
         let myBatteryState = myDevice.batteryState
         
-        println("\(myBatteryLevel)%")
+        println("\(myBatteryLevel * 100)%")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
