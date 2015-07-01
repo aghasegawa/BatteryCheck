@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let myDevice: UIDevice = UIDevice.currentDevice()
+        
+        myDevice.batteryMonitoringEnabled = true
+        let myBatteryLevel = myDevice.batteryLevel
+        let myBatteryState = myDevice.batteryState
+        
+        println("\(myBatteryLevel)%")
     }
 
     override func didReceiveMemoryWarning() {
